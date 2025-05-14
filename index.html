@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini calculatrice</title>
+</head>
+<body>
+    <h2>Calcultrice</h2>
+    <input id="a" type="number"
+placeholder="Nombre 1">
+    <input id="b" type="number"
+placeholder="Nombre 2">
+    <button
+onclick="calculer()">Additionner</button</l>
+   <m></m>
+
+<P>Résultat :<span id="resultat"></span></P>
+     <script>
+        function calculer() {
+            let a =
+parseFloat(document.getElementById("a").value);
+            let b =
+parseFloat(document.getElementById("b").value);
+document.getElementById("resultat").textContent = a + b;
+        }
+       </script>
+    </body>
+    </html>
